@@ -1,4 +1,4 @@
-# Proyecto DSM - Carrito de compras
+# Proyecto DSM - Modelo.Carrito de compras
 Proyecto de cátedra para la materia Desarrollo de Software para Móviles - DSM941
 
 ## Enlaces de interés 👀
