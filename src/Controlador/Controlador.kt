@@ -15,13 +15,27 @@ object Controlador {
 
     private fun mostrarMenuPrincipal() {
         while (true) {
-            Vista.mostrarMensaje("1. Mostrar Productos\n2. Agregar Producto\n3. Ver Carrito\n4. Salir")
+            Vista.mostrarMensaje(
+                """
+            =========================================
+                 🌸 Bienvenid@ a Aura Skin Co. 🌸
+            =========================================
+            ✨ 1. Mostrar Productos
+            ✨ 2. Agregar Producto al Carrito
+            ✨ 3. Eliminar Producto al Carrito
+            ✨ 4. Ver Carrito
+            ❌ 5. Salir
+            =========================================
+            Por favor, selecciona una opción:
+            """.trimIndent()
+            )
             val opcion = readLine()
             when (opcion) {
                 "1" -> mostrarProductos()
                 "2" -> agregarProducto()
-                "3" -> verCarrito()
-                "4" -> {
+                "3" -> eliminarProducto()
+                "4" -> verCarrito()
+                "5" -> {
                     Vista.mostrarMensaje("Saliendo de la aplicación...")
                     return
                 }
@@ -35,7 +49,8 @@ object Controlador {
         for (producto in productos) {
             Vista.mostrarMensaje("${producto.id}. ${producto.nombre} - Precio: $${producto.precio} - Cantidad Disponible: ${producto.cantidadDisponible}")
         }
-        Vista.mostrarMensaje("Regresar al menú principal")
+        Vista.mostrarMensaje("Presione 'Enter' para regresar al menú principal")
+        readLine()
     }
 
     fun agregarProducto() {
@@ -49,7 +64,6 @@ object Controlador {
             if (producto != null) {
                 try {
                     carrito.agregarProducto(producto, cantidad)
-                    Vista.mostrarMensaje("Producto agregado al carrito: ${producto.nombre}, Cantidad: $cantidad")
                 } catch (e: IllegalArgumentException) {
                     Vista.mostrarMensaje("Error: ${e.message}")
                 }
@@ -60,6 +74,29 @@ object Controlador {
             Vista.mostrarMensaje("Entrada no válida.")
         }
         Vista.mostrarMensaje("Regresar al menú principal o agregar otro producto.")
+        readLine()
+    }
+
+    fun eliminarProducto(){
+        Vista.mostrarMensaje("Ingresa el número del producto que deseas eliminar del carrito: ")
+        val id = readLine()?.toIntOrNull()
+        if (id != null) {
+            val producto = productos.find { it.id == id }
+            if (producto != null) {
+                try {
+                    carrito.eliminarProductoPorId(producto.id)
+                } catch (e: IllegalArgumentException) {
+                    Vista.mostrarMensaje("Error: ${e.message}")
+                }
+            } else {
+                Vista.mostrarMensaje("Producto no encontrado.")
+            }
+        } else {
+            Vista.mostrarMensaje("Entrada no válida.")
+        }
+        Vista.mostrarMensaje("Presione 'Enter' para regresar al menú principal")
+        readLine()
+
     }
 
     fun verCarrito() {
@@ -70,6 +107,8 @@ object Controlador {
             Vista.mostrarProductos(items)
         }
         Vista.mostrarMensaje("Regresar al menú principal\nConfirmar compra")
+        readLine()
     }
 }
+
 
