@@ -45,11 +45,20 @@ object Controlador {
     }
 
     fun mostrarProductos() {
-        Vista.mostrarMensaje("Productos disponibles:")
+        Vista.mostrarMensaje("══════════ ✨ Productos disponibles ✨ ════════════")
+        Vista.mostrarMensaje("ID   | Producto            | Precio   | Stock ")
+        Vista.mostrarMensaje("═══════════════════════════════════════════════════")
+
         for (producto in productos) {
-            Vista.mostrarMensaje("${producto.id}. ${producto.nombre} - Precio: $${producto.precio} - Cantidad Disponible: ${producto.cantidadDisponible}")
+            Vista.mostrarMensaje(
+                String.format(
+                    "%-5s| %-20s| $%-8s| %-5s",
+                    producto.id, producto.nombre, producto.precio, producto.cantidadDisponible
+                )
+            )
         }
-        Vista.mostrarMensaje("Presione 'Enter' para regresar al menú principal")
+        Vista.mostrarMensaje("══════════════════════════════════════════════════")
+        Vista.mostrarMensaje("\uD83D\uDD19 Presione 'Enter' para regresar al menú principal")
         readLine()
     }
 
