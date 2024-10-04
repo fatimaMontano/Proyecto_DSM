@@ -49,13 +49,23 @@ class Carrito {
     }
 
     fun generarFactura(): Factura {
-        val totalGeneral = items.sumOf { it.calcularPrecioTotal() }
+        val subtotal = items.sumOf { it.calcularPrecioTotal() }
+        val porcentajeImpuesto = 0.13
+        val impuestos = subtotal * porcentajeImpuesto
+        val totalGeneral = subtotal + impuestos
         val fecha = java.time.LocalDate.now().toString()
-        return Factura(items, totalGeneral, fecha)
+        return Factura(
+            items = items,
+            subtotal = subtotal,
+            porcentajeImpuesto = porcentajeImpuesto,
+            impuestos = impuestos,
+            total = totalGeneral,
+            fecha = fecha
+        )
     }
 
     fun limpiarCarrito() {
         items.clear()
-        println("El carrito ha sido limpiado.")
+        //println("El carrito ha sido limpiado.")
     }
 }

@@ -37,7 +37,7 @@ object Controlador {
                 "4" -> verCarrito()
                 "5" -> {
                     Vista.mostrarMensaje("Saliendo de la aplicación...")
-                    return
+                    System.exit(0)
                 }
                 else -> Vista.mostrarMensaje("Opción no válida. Intente de nuevo.")
             }
@@ -63,27 +63,46 @@ object Controlador {
     }
 
     fun agregarProducto() {
-        Vista.mostrarMensaje("Ingrese el ID del producto que desea agregar:")
-        val id = readLine()?.toIntOrNull()
-        Vista.mostrarMensaje("Ingrese la cantidad que desea agregar:")
-        val cantidad = readLine()?.toIntOrNull()
+        while (true) {
+            // Pedir al usuario el ID del producto y la cantidad
+            Vista.mostrarMensaje("Ingrese el ID del producto que desea agregar:")
+            val id = readLine()?.toIntOrNull()
+            Vista.mostrarMensaje("Ingrese la cantidad que desea agregar:")
+            val cantidad = readLine()?.toIntOrNull()
 
-        if (id != null && cantidad != null) {
-            val producto = productos.find { it.id == id }
-            if (producto != null) {
-                try {
-                    carrito.agregarProducto(producto, cantidad)
-                } catch (e: IllegalArgumentException) {
-                    Vista.mostrarMensaje("Error: ${e.message}")
+            // Verificar si las entradas son válidas
+            if (id != null && cantidad != null) {
+                val producto = productos.find { it.id == id }
+                if (producto != null) {
+                    try {
+                        carrito.agregarProducto(producto, cantidad)
+                        Vista.mostrarMensaje("Producto agregado correctamente.")
+                    } catch (e: IllegalArgumentException) {
+                        Vista.mostrarMensaje("Error: ${e.message}")
+                    }
+                } else {
+                    Vista.mostrarMensaje("Producto no encontrado.")
                 }
             } else {
-                Vista.mostrarMensaje("Producto no encontrado.")
+                Vista.mostrarMensaje("Entrada no válida.")
             }
-        } else {
-            Vista.mostrarMensaje("Entrada no válida.")
+
+            // Ofrecer opciones después de agregar un producto
+            Vista.mostrarMensaje("Seleccione una opción:")
+            Vista.mostrarMensaje("1. Agregar otro producto")
+            Vista.mostrarMensaje("2. Regresar al menú principal")
+
+            // Leer la opción del usuario
+            when (readLine()) {
+                "1" -> continue  // Volver a agregar otro producto
+                "2" -> {
+                    Vista.mostrarMensaje("Regresando al menú principal...\n")
+                    return  // Salir del bucle y volver al menú principal
+                }
+                else -> Vista.mostrarMensaje("Opción no válida. Regresando al menú principal.")
+            }
+            return
         }
-        Vista.mostrarMensaje("Regresar al menú principal o agregar otro producto.")
-        readLine()
     }
 
     fun eliminarProducto(){
@@ -115,8 +134,24 @@ object Controlador {
         } else {
             Vista.mostrarProductos(items)
         }
-        Vista.mostrarMensaje("Regresar al menú principal\nConfirmar compra")
-        readLine()
+        while (true) {
+            Vista.mostrarMensaje("Seleccione una opción:\n1. Seguir comprando\n2. Confirmar compra")
+            when (readLine()) {
+                "1" -> {
+                    return
+                }
+                "2" -> {
+                    val factura = carrito.generarFactura()
+                    Vista.mostrarFactura(factura)
+                    carrito.limpiarCarrito()
+                    return
+                }
+                else -> {
+                    // Manejar opción inválida
+                    Vista.mostrarMensaje("Opción no válida. Por favor, seleccione '1' para seguir comprando o '2' para confirmar compra.")
+                }
+            }
+        }
     }
 }
 
