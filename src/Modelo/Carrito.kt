@@ -40,7 +40,7 @@ class Carrito {
                 println("Se ha disminuido la cantidad de ${item.producto.nombre}. Nueva cantidad: ${item.cantidad}")
             }
         } else {
-            throw IllegalArgumentException("Producto no encontrado en el carrito con ID: $id")
+            throw IllegalArgumentException("El producto no fue encontrado en el carrito con el numero ID: $id")
         }
     }
 
