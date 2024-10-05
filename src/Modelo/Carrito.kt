@@ -29,21 +29,6 @@ class Carrito {
         }
     }
 
-    fun disminuirCantidad(id: Int, cantidadARestar: Int) {
-        val item = items.find { it.producto.id == id }
-        if (item != null) {
-            item.disminuirCantidad(cantidadARestar)
-            if (item.cantidad == 0) {
-                items.remove(item)
-                println("El producto ${item.producto.nombre} ha sido eliminado del carrito porque la cantidad es 0.")
-            } else {
-                println("Se ha disminuido la cantidad de ${item.producto.nombre}. Nueva cantidad: ${item.cantidad}")
-            }
-        } else {
-            throw IllegalArgumentException("El producto no fue encontrado en el carrito con el numero ID: $id")
-        }
-    }
-
     fun mostrarCarrito(): List<CarritoItem> {
         return items
     }
