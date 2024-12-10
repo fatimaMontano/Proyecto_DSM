@@ -5,10 +5,10 @@ Segundo Proyecto en Android con Kotlin para la materia **Desarrollo de Software 
 ---
 
 ## **Enlaces de interés 👀**
-- [Trello](#)  
-- [Mockups del Proyecto](#)
-- [Documentación del Proyecto](#)  
-  - [Guía de Usuario](#)
+- [Trello] - https://
+- [Mockups del Proyecto] - https://
+- [Documentación del Proyecto]  
+  - [Guía de Usuario]- https://
 
 ---
 
