@@ -8,7 +8,7 @@ Segundo Proyecto en Android con Kotlin para la materia **Desarrollo de Software 
 - [Mockups del Proyecto] - [Enlace a Figma](https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=0-1&t=3jkqrCXcwI2Nvkde-1)
 
 
-## **Developers 👩🏻‍💻**
+## **Desarrolladores 👩🏻‍💻**
 **Grupo Teórico:** [01T]  
 - [GC200404] Fátima Argentina González Crespín  
 - [MP200864] Fátima Gisela Montano Pérez  
