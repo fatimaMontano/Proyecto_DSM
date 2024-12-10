@@ -1,12 +1,11 @@
-# **Eventify - Aplicación de Gestión de Eventos Comunitarios**
+# **Eventify - App de Gestión de Eventos Comunitarios**
 
 Segundo Proyecto en Android con Kotlin para la materia **Desarrollo de Software para Móviles (DSM941)**. Esta aplicación facilita la creación, organización y gestión de eventos comunitarios, así como la participación de los usuarios en actividades locales.
 
 
 ## **Enlaces de interés 👀**
-- [Trello] - #https://trello.com/b/MS9bgcd6
+- [Trello] - https://trello.com/b/MS9bgcd6
 - [Mockups del Proyecto] - https://
-- [Documentación del Proyecto][Guía de Usuario]- https://
 
 
 ## **Devs 👩🏻‍💻**
