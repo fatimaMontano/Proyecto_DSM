@@ -5,7 +5,7 @@ Segundo Proyecto en Android con Kotlin para la materia **Desarrollo de Software 
 
 ## **Enlaces de interés 👀**
 - [Enlace a Trello] -  https://trello.com/b/MS9bgcd6
-- [Mockups del Proyecto] - [https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=0-1&t=3jkqrCXcwI2Nvkde-1](https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM--Eventify?node-id=12-376&t=shdNdLgMATfYvaGe-1)
+- [Mockups del Proyecto] - [[https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=0-1&t=3jkqrCXcwI2Nvkde-1](https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM--Eventify?node-id=12-376&t=shdNdLgMATfYvaGe-1)](https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM--Eventify?node-id=1-2&t=LlNksIzSIZlxPpr5-1)
 - [Documentación] [Guía de Usuario] - 
 
 
