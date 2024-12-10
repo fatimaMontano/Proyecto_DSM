@@ -4,8 +4,9 @@ Segundo Proyecto en Android con Kotlin para la materia **Desarrollo de Software 
 
 
 ## **Enlaces de interés 👀**
-- [Trello] - [Enlace a Tablero](https://trello.com/b/MS9bgcd6)
-- [Mockups del Proyecto] - [Enlace a Figma](https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=0-1&t=3jkqrCXcwI2Nvkde-1)
+- [Enlace a Trello] -  https://trello.com/b/MS9bgcd6
+- [Mockups del Proyecto] - https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=0-1&t=3jkqrCXcwI2Nvkde-1
+- [Documentación] [Guía de Usuario] - 
 
 
 ## **Desarrolladores 👩🏻‍💻**
@@ -23,4 +24,21 @@ Este proyecto está licenciado bajo la [Creative Commons Atribución-NoComercial
 - **📢 Notificaciones:** Recordatorios de eventos para los usuarios.
 - **👥 Participación de Usuarios:** Registro y visualización de los asistentes confirmados.
 
+---
+## **Instalación y Configuración**
+Sigue estos pasos para ejecutar la aplicación:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/fatimaMontano/Proyecto_DSM
+2. **Abrir en Android Studio:**
+   - Abre Android Studio.
+   - Selecciona "Open an existing project".
+   - Navega hasta la carpeta donde clonaste el repositorio.
+3. **Configurar dependencias:**
+   - Asegúrate de que las dependencias de Gradle estén actualizadas.
+   - Sincroniza el proyecto.
+   - Ejecutar la aplicación:
+4. **Conecta un dispositivo Android o usa un emulador.**
+   - Haz clic en el botón de ejecución (▶).
 
