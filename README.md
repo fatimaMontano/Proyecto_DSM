@@ -24,9 +24,3 @@ Este proyecto está licenciado bajo la [Creative Commons Atribución-NoComercial
 - **👥 Participación de Usuarios:** Registro y visualización de los asistentes confirmados.
 
 
-## **Instalación y Configuración**
-Sigue estos pasos para ejecutar la aplicación:
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/fatimaMontano/Proyecto_DSM
