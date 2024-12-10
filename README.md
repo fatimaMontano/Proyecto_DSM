@@ -5,7 +5,7 @@ Segundo Proyecto en Android con Kotlin para la materia **Desarrollo de Software 
 
 ## **Enlaces de interés 👀**
 - [Enlace a Trello] -  https://trello.com/b/MS9bgcd6
-- [Mockups del Proyecto] - https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=0-1&t=3jkqrCXcwI2Nvkde-1
+- [Mockups del Proyecto] - [https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=0-1&t=3jkqrCXcwI2Nvkde-1](https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM--Eventify?node-id=12-376&t=shdNdLgMATfYvaGe-1)
 - [Documentación] [Guía de Usuario] - 
 
 
@@ -25,7 +25,7 @@ Este proyecto está licenciado bajo la [Creative Commons Atribución-NoComercial
 - **👥 Participación de Usuarios:** Registro y visualización de los asistentes confirmados.
 
 ---
-## **Instalación y Configuración**
+## **Instalación y Configuración ⚙️**
 Sigue estos pasos para ejecutar la aplicación:
 
 1. **Clonar el repositorio:**
