@@ -5,7 +5,7 @@ Segundo Proyecto en Android con Kotlin para la materia **Desarrollo de Software 
 
 ## **Enlaces de interés 👀**
 - [Trello] - https://trello.com/b/MS9bgcd6
-- [Mockups del Proyecto] - https://
+- [Mockups del Proyecto] - [https://](https://www.figma.com/proto/8WspXGUzDHeNSXnc5WWlzY/Mokups-DSM_UDB?node-id=1-2&node-type=canvas&t=B4VoRwj94bkmjTtA-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&share=1)
 
 
 ## **Devs 👩🏻‍💻**
