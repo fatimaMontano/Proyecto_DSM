@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Crear_Paciente">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="96dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/santa_b_rbara_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="327dp"
+        android:layout_height="508dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFBFB"
+        android:backgroundTint="#FFFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.625"
+        app:layout_wrapBehaviorInParent="skipped">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/raza"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="33dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Raza"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/especie"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="121dp"
+            android:layout_marginEnd="35dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Especie"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombreCompletoPropietario"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="34dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Nombre completo propietario"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/peso"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="199dp"
+            android:layout_marginEnd="39dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Peso"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombreCompleto"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="39dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Nombre completo"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_doctor"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="161dp"
+            android:layout_marginEnd="35dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Color"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/doctor"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd="36dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Domicilio"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/id_paciente"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="282dp"
+            android:layout_marginEnd="35dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Correo electronico"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/paciente"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="33dp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:hint="Telefono"
+            android:hyphenationFrequency="none"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            app:textInputLayoutFocusedRectEnabled="false" />
+
+        <TextView
+            android:id="@+id/CItaNameTV"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:text="Crear Paciente" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CItaNameTV"
+            android:layout_marginTop="-34dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paciente"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="91dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="106dp"
+            android:background="#7582F2"
+            android:onClick="crearPaciente"
+            android:text="Crear"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="96dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/santa_b_rbara_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
